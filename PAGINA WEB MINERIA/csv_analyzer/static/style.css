@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #2c2f3b; /* Fondo oscuro */
+    color: #e4e6f1; /* Texto claro */
+}
+
+h1 {
+    color: #f3f4f6; /* Título en color claro */
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #3e4a61; /* Fondo del formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4e5d78; /* Borde oscuro */
+    border-radius: 5px;
+    background-color: #2c2f3b;
+    color: #e4e6f1;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #5a6d7e; /* Color del botón */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8a9ab3; /* Color al pasar el cursor */
+}
+
+#results {
+    margin-top: 20px;
+    background: #3e4a61; /* Fondo de resultados */
+    padding: 20px;
+    border: 1px solid #4e5d78;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #4e5d78; /* Fondo de los elementos de lista */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+    color: #c3cdd6; /* Color de los textos importantes */
+}
+
+h2 {
+    color: #f3f4f6;
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #3e4a61;
+}
+
+.table th, .table td {
+    border: 1px solid #4e5d78;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #5a6d7e;
+    color: #ffffff;
+}
+
+.table tr:nth-child(even) {
+    background-color: #2c2f3b;
+}
+
+.table tr:hover {
+    background-color: #4e5d78;
+    color: #ffffff;
+}
+
+.table td {
+    color: #e4e6f1;
+}

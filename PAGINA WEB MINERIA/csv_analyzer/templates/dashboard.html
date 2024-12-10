@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CSV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Dashboard de CSV</h1>
+        <hr>
+
+        <!-- Estadísticas -->
+        <h2>Estadísticas del Archivo</h2>
+        <ul>
+            <li><strong>Total de Filas:</strong> {{ stats.total_rows }}</li>
+            <li><strong>Total de Columnas:</strong> {{ stats.total_columns }}</li>
+            <li><strong>Valores Nulos:</strong> {{ stats.null_values }}</li>
+            <li><strong>Filas Duplicadas:</strong> {{ stats.duplicate_rows }}</li>
+        </ul>
+        <hr>
+
+        <!-- Vulnerabilidades -->
+        <h2>Vulnerabilidades Detectadas</h2>
+        <ul>
+            {% for vulnerability in vulnerabilities %}
+                <li>{{ vulnerability }}</li>
+            {% endfor %}
+        </ul>
+        <hr>
+
+        <!-- Tabla de datos -->
+        <h2>Datos del Archivo</h2>
+        <div>{{ tables | safe }}</div>
+    </div>
+</body>
+</html>
